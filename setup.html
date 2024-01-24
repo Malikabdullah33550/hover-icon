@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height: 100vh;
+        }
+        .button{
+            position: relative;
+            height: fit-content;
+            color: white;
+            border-radius: 5px;
+            width: fit-content;
+            padding-inline: 100px;
+            line-height: 50px;
+            background-color:#0672ca;
+        }
+        .button:hover{
+            background-color: limegreen;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        img{
+            transform: scale(0,1);
+            position: absolute;
+            width: 12%;
+            left: 0;
+            transition: left 500ms ease-in-out 0s,
+            transform 100ms step-start 0s;
+        }
+        .button:hover img{
+            left: 350px;
+            transform: scale(1,1);
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="button">
+        <img src="clud.png" alt=""><h4>Download Full Setup v1.6.62</h4>
+    </div>
+</body>
+</html>
